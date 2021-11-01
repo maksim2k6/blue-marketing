@@ -1,0 +1,351 @@
+@import 'fonts.css';
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'rubik';
+  font-weight: 400;
+}
+body{
+  width: 100%;
+  background: #F1F1F1;
+}
+.navbar{
+  width: 100px;
+  height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 0.3s;
+  padding: 30px 15px;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.navbar:hover{
+  width: 234px;
+}
+.navbar__logo{
+  padding: 0 5px;
+}
+.navbar__logo img{
+  width: 60px;
+}
+.navbar__user img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.navbar__list a{
+  width: 234px;
+  display: flex;
+  align-items: center;
+  padding: 25px 15px;
+  color: #939393;
+  fill: #939393;
+}
+.navbar__list svg{
+  width: 40px;
+}
+.navbar__list span{
+  font-size: 18px;
+  margin-left: 30px;
+}
+.navbar__list a:hover{
+  color: #2A86B1;
+  fill: #2A86B1;
+}
+
+.header{
+  max-width: 1110px;
+  width: 95%;
+  height: 500px;
+  border-radius: 15px;
+  background: #ffffff url('../images/bg.png') no-repeat center center / cover;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 62px;
+}
+.header h1{
+  max-width: 332px;
+  font-size: 50px;
+  line-height: 59px;
+  color: #464748;
+  font-weight: 700;
+}
+.header p{
+  max-width: 314px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #696868;
+  margin: 25px 0;
+  text-align: justify;
+}
+.read-more{
+  padding: 7px 63px;
+  border-radius: 30px;
+  background: #3FA5D5;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 19px;
+  display: inline-flex;
+  box-shadow: 0px 3px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+}
+.read-more:hover{
+  background: #2A86B1;
+}
+
+.cards{
+  max-width: 1110px;
+  width: 95%;
+  min-height: 50px;
+  margin: 30px auto 0;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+.cards__item{
+  width: 23%;
+  min-height: 330px;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 24px 15px 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.cards__item img{
+  width: 100px;
+}
+.cards__item h3{
+  font-size: 20px;
+  line-height: 24px;
+  color: #2A86B1;
+  font-weight: 700;
+  width: min-content;
+  text-align: center;
+}
+
+.content{
+  max-width: 1110px;
+  width: 95%;
+  min-height: 50px;
+  /* border: 1px solid red; */
+  margin: 48px auto 44px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content__info{
+  width: 74%;
+  min-height: 200px;
+  /* border: 1px solid green; */
+}
+.content__news{
+  width: 23%;
+  min-height: 200px;
+  /* border: 1px solid green; */
+}
+.content h2{
+  margin-bottom: 22px;
+  padding-left: 18px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #686868;
+}
+.content__info p{
+  padding: 15px;
+  border-radius: 8px;
+  background: #ffffff;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #545454;
+}
+.content__news--card{
+  width: 100%;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.content__news--card img{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.news--card__content h3{
+  font-size: 17px;
+  line-height: 16px;
+  color: #323232;
+  margin-bottom: 5px;
+}
+.news--card__content p{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 13px;
+  color: #0c0c0c;
+}
+
+.footer{
+  width: 100%;
+  padding: 40px 0;
+  background: #3FA5D5;
+}
+.footer__center{
+  max-width: 1110px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__logo{
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 59px;
+  font-weight: 700;
+}
+.footer__contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.phone{
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.email{
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+@media (max-width: 1400px) {
+  .header,
+  .cards,
+  .content,
+  .footer__center{
+    max-width: 960px;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar,
+  .navbar:hover{
+    max-width: 960px;
+    width: 95%;
+    height: unset;
+    transition: unset;
+    position: unset;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+  }
+  .navbar__list{
+    display: flex;
+  }
+  .navbar__list a{
+    width: auto;
+    flex-direction: column;
+  }
+  .navbar__list svg{
+    height: 47px;
+  }
+  .navbar__list span{
+    margin: 0;
+  }
+}
+@media (max-width: 992px) {
+  .cards{
+    flex-wrap: wrap;
+  }
+  .cards__item{
+    width: 48%;
+    margin-bottom: 3%;
+  }
+  .content__info,
+  .content__news{
+    width: 100%;
+  }
+  .content__news--card{
+    width: 48%;
+  }
+  .content__news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .content h2{
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .navbar__list{
+    order: 1;
+    width: 100%;
+    justify-content: center;
+  }
+  .navbar{
+    flex-wrap: wrap;
+  }
+  .header{
+    height: unset;
+    padding: 25px 15px;
+  }
+}
+@media (max-width: 576px) {
+  .footer__center,
+  .footer__contacts{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .navbar__list li{
+    width: 50%;
+  }
+  .navbar__list{
+    flex-wrap: wrap;
+  }
+  .navbar__list a{
+    padding: 10px;
+  }
+  .header{
+    align-items: center;
+    text-align: center;
+  }
+  .header h1{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .cards__item{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .content__news--card{
+    width: 100%;
+  }
+  .footer__logo{
+    font-size: 40px;
+  }
+}
+@media (max-width: 320px) {}
